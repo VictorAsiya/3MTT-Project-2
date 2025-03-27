@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 15vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header h1{
+    color: white;
+    font-size: 2rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+header ul li{
+    margin: 0 10px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 900;
+}
+header ul a{
+    text-decoration: none;
+    color: white;
+}
+header ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+}
+header ul li:hover::after {
+    width: 100%;
+}
+
+/* SECTION */
+.Section_1{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    background-image: url('./Images/pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Text_div{
+    height: 40%;
+    width: 40%;
+    /* background-color: bisque; */
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Text_div h1{
+    line-height: 60px;
+    font-size: 50px;
+    font-weight: 900;
+}
+.Text_div h2{
+    color: #876060;
+}
+.Text_div p{
+    margin: 20px 0 0 0;
+}
+.Text_div button{
+    margin-top: 2vh;
+    padding: 1vh 2vh;
+    border: none;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: .1s;
+}
+.Text_div button:hover{
+    background-color: red;
+    color: white;
+    scale: 1.02;
+    font-weight: 900;
+    cursor: pointer;
+}
+.Image_div{
+    height: 60%;
+    width: 20%;
+    background-color: aqua;
+    background-image: url(./Images/IMG_3781.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 5vh;
+}
+
+/* Testimonials Section */
+#Testimonials{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    background-color: #060b3b;
+}
+#Testimonials h1{
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2vh;
+    /* background-color: #6f3333; */
+}
+.container div{
+    background-color: brown;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2vh;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+    text-align: justify;
+}
+.joe_img{
+    height: 30% !important;
+    width: fit-content !important;
+    background-color: rgba(162, 10, 10, 0.584) !important;
+    padding-bottom: 10px !important;
+}
+.joe_img p{
+    color: rgb(223, 172, 5) !important;
+    font-size: .7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.joe_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+}
+.container div h3{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container div p{
+    color: white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    height: 15vh;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        height: fit-content;
+        padding: 10px 0;
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
+    header ul {
+        flex-direction: column;
+    }
+    header ul li {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+    .Section_1 {
+        text-align: center;
+        gap: 2%;
+    }
+
+    .Text_div {
+        width: 40%;
+    }
+    .Text_div h1{
+        line-height: 25px;
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .Text_div h2{
+        color: #876060;
+    }
+    .Text_div p{
+        margin: 20px 0 0 0;
+    }
+    .Image_div{
+        width: 40%;
+    }
+    #Testimonials {
+        height: 150vh;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 5vh;
+        
+    }
+    .container div p{
+        font-size: 14px !important;
+    }
+    .container div {
+        height: 30%;
+        width: 90%;
+    }
+    footer{
+        font-size: 13px;
+        display: flex;
+        /* justify-content: space-between; */
+        /* padding: 10px 15px; */
+        /* gap: 2%; */
+    }
+}
