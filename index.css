@@ -54,7 +54,7 @@ header ul li:hover::after {
     justify-content: center;
     align-items: center;
     background-color: #f1f1f1;
-    background-image: url('./Images/pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg');
+    background-image: url('./pngtree-technology-background-binary-computer-code-vector-design-image_458702.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ header ul li:hover::after {
     height: 60%;
     width: 20%;
     background-color: aqua;
-    background-image: url(./Images/IMG_3781.jpg);
+    background-image: url(./IMG_3781.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -243,8 +243,5 @@ footer{
     footer{
         font-size: 13px;
         display: flex;
-        /* justify-content: space-between; */
-        /* padding: 10px 15px; */
-        /* gap: 2%; */
     }
 }
